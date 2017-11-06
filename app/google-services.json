@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "658912327951",
+    "firebase_url": "https://fir-tp-66552.firebaseio.com",
+    "project_id": "fir-tp-66552",
+    "storage_bucket": "fir-tp-66552.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658912327951:android:3c47a8bb65664596",
+        "android_client_info": {
+          "package_name": "com.eservices.amine.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658912327951-3grtp064bvft4c23ptkdi385pbnfjta6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAITqBl5UN5yKDUiTtaj6wWy1c4_pcT9qY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

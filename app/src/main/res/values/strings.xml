@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Firebase finale</string>
+
+    <array name="genres">
+        <item>Grunge</item>
+        <item>Rock\'n roll</item>
+        <item>Reggae</item>
+        <item>Electro</item>
+    </array>
+
+</resources>
