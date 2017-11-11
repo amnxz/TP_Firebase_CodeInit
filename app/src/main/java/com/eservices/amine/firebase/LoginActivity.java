@@ -55,41 +55,41 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void userLogin(){
-//        String email = editTextEmail.getText().toString().trim();
-//        String pw = editTextPassword.getText().toString().trim();
-//
-//        if (TextUtils.isEmpty(email)){
-//            //pas d'email
-//            Toast.makeText(this, "Veuillez entrez un email",
-//                    Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//
-//        if (TextUtils.isEmpty(pw)){
-//            //pas de mdp
-//            Toast.makeText(this, "Veuillez entrer un mot de passe",
-//                    Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//
-//        progressDialog.setMessage("Authentification en cours ...");
-//        progressDialog.show();
-//
-//        firebaseAuth.signInWithEmailAndPassword(email, pw)
-//                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<AuthResult> task) {
-//                        progressDialog.dismiss();
-//                        if(task.isSuccessful()){
-//                            //lancer l'acitivité du profil utilisateur
-//                            finish();
-//                            startActivity(new Intent
-//                                (getApplicationContext(), ProfileActivity.class)
-//                                         );
-//
-//                        }
-//                    }
-//                });
+        String email = editTextEmail.getText().toString().trim();
+        String pw = editTextPassword.getText().toString().trim();
+
+        if (TextUtils.isEmpty(email)){
+            //pas d'email
+            Toast.makeText(this, "Veuillez entrez un email",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (TextUtils.isEmpty(pw)){
+            //pas de mdp
+            Toast.makeText(this, "Veuillez entrer un mot de passe",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        progressDialog.setMessage("Authentification en cours ...");
+        progressDialog.show();
+
+        firebaseAuth.signInWithEmailAndPassword(email, pw)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        progressDialog.dismiss();
+                        if(task.isSuccessful()){
+                            //lancer l'acitivité du profil utilisateur
+                            finish();
+                            startActivity(new Intent
+                                (getApplicationContext(), ProfileActivity.class)
+                                         );
+
+                        }
+                    }
+                });
     }
 
     @Override

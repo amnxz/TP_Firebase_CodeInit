@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Firebase finale</string>
+    <string name="app_name">Firebase</string>
 
     <array name="genres">
         <item>Grunge</item>

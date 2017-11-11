@@ -26,9 +26,9 @@ import java.util.List;
 
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener{
 
-//    private TextView textViewUserEmail;
-//    private Button buttonLogout;
-//    private FirebaseAuth firebaseAuth;
+    private TextView textViewUserEmail;
+    private Button buttonLogout;
+    private FirebaseAuth firebaseAuth;
 
 
     //------------------------------//
@@ -48,21 +48,21 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-//        firebaseAuth = FirebaseAuth.getInstance();
-//        if(firebaseAuth.getCurrentUser()==null){
-//            finish();
-//            startActivity(new Intent(this, LoginActivity.class));
-//        }
-//
-//        FirebaseUser user = firebaseAuth.getCurrentUser();
-//
-//        textViewUserEmail = (TextView) findViewById(R.id.textUserEmail);
-//        buttonLogout = (Button) findViewById(R.id.buttonLogout);
-//
-//
-//        textViewUserEmail.setText("Bonjour "+user.getEmail());
-//
-//        buttonLogout.setOnClickListener(this);
+        firebaseAuth = FirebaseAuth.getInstance();
+        if(firebaseAuth.getCurrentUser()==null){
+            finish();
+            startActivity(new Intent(this, LoginActivity.class));
+        }
+
+        FirebaseUser user = firebaseAuth.getCurrentUser();
+
+        textViewUserEmail = (TextView) findViewById(R.id.textUserEmail);
+        buttonLogout = (Button) findViewById(R.id.buttonLogout);
+
+
+        textViewUserEmail.setText("Bonjour "+user.getEmail());
+
+        buttonLogout.setOnClickListener(this);
 
 
 
@@ -92,12 +92,12 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
-//        if(v==buttonLogout){
-//            firebaseAuth.signOut();
-//            finish();
-//            startActivity(new Intent(this, LoginActivity.class));
-//
-//        }
+        if(v==buttonLogout){
+            firebaseAuth.signOut();
+            finish();
+            startActivity(new Intent(this, LoginActivity.class));
+
+        }
 
     }
 
